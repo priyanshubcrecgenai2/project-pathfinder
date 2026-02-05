@@ -1,0 +1,167 @@
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f9fafc;
+  color: #0f172a;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+  background: #020617;
+  color: white;
+}
+
+.navbar a {
+  margin: 0 14px;
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  gap: 50px;
+  padding: 90px 8%;
+  align-items: center;
+}
+
+.hero img {
+  width: 48%;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* BUTTONS */
+.primary, .cta {
+  background: #2563eb;
+  color: white;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.secondary {
+  background: transparent;
+  border: 2px solid #2563eb;
+  padding: 12px 26px;
+  border-radius: 8px;
+  margin-left: 12px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 90px 8%;
+}
+
+.section.dark {
+  background: #020617;
+  color: white;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+}
+
+/* FEATURE CARDS */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: #0f172a;
+  color: white;
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.feature-card.light {
+  background: white;
+  color: #020617;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+/* PILLARS */
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.pillar-card {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 18px;
+}
+
+/* STATS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.stat-card h3 {
+  font-size: 2.2rem;
+  color: #2563eb;
+}
+
+/* DIVIDER */
+.divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #cbd5e1, transparent);
+}
+
+/* CTA */
+.cta-section {
+  padding: 90px;
+  text-align: center;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero img {
+    width: 100%;
+  }
+}
